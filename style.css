@@ -1,0 +1,22 @@
+.btn {
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    background-color: #191970;
+    color: red;
+}
+
+.jumbotron {
+    background-color: #191970;
+    color: red;
+}
+
+.col-md-10.description {
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+}
+
+
+
+
