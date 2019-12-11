@@ -17,7 +17,35 @@ $(document).ready(function() {
       localStorage.setItem(time, value);
       //console.log(time, value);
     });
-});
+})
+
+// need to check moment for current hour to set it to present
+// loop through every hour to determine if it's past, present, or future
+// past colors will show gray, present will be green, future will be red
+
+function hourUpdater() {
+    
+    var currentHour = moment().hours();
+    
+    $(".time-block").each(function() {
+      var blockHour = parseInt($(this).attr("id").split("-")[1]);
+      if (blockHour < currentHour) {
+        $(this).addClass("past");
+      }
+      else if (blockHour === currentHour) {
+        $(this).removeClass("past");
+        $(this).addClass("present");
+      }
+      else {
+        $(this).removeClass("past");
+        $(this).removeClass("present");
+        $(this).addClass("future");
+      }
+    });
+  }
+
+  
+
 
 
 

@@ -18,4 +18,16 @@
     
 }
 
+.past {
+    background-color: #C0C0C0;
+}
+
+.present {
+    background-color: #00FF00;
+}
+
+.future {
+    background-color: red;
+}
+
 
