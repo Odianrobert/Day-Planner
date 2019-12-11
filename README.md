@@ -10,7 +10,13 @@ Need to make the text that the user types into the textarea will stay upon page 
 Need to make a fucntion that color codes the hours based on real time using moment.js.
 Added an eventlistener to each save button, assigned variables to time and value.
 Set the values to local storage, need to figure out how to keep them on the page after a refresh
- Added class for past, present, and future to assign colors to each.
+Added class for past, present, and future to assign colors to each.
+Made a current hour variable so that the page has a specific color attached to each time block
+The classes were set up to be dynamic depending what time it is.
+By using add/remove class, you set whatever is active to certain colors. Not sure how to check this
+Changed format to diplay Day of week, month name, day of month, year, time (LLLL) 
+After being able to correctly get the line of code for local storage, i could just copy and paste the lines and change the hour #
+
 
 
 
