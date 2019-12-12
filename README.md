@@ -16,6 +16,9 @@ The classes were set up to be dynamic depending what time it is.
 By using add/remove class, you set whatever is active to certain colors. Not sure how to check this
 Changed format to diplay Day of week, month name, day of month, year, time (LLLL) 
 After being able to correctly get the line of code for local storage, i could just copy and paste the lines and change the hour #
+still will not get correct color
+Had to change all ids to reference the hour, would not work any other way.  COuld not easily find whether it is 12 or 24hour format, 
+but I assumed correctly goin with 24.  
 
 
 

@@ -1,14 +1,17 @@
+body {
+    background-image: url("dark-grey-terrazzo.png");
+}
 .btn {
     border: 3px;
     border-style: solid;
     border-color: black;
-    background-color: #191970;
-    color: red;
+    background-color: gray;
+    color: black;
 }
 
 .jumbotron {
-    background-color: #191970;
-    color: red;
+    background-color: black;
+    color: gray;
 }
 
 .col-md-10.description {

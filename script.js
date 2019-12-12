@@ -44,25 +44,33 @@ function hourUpdater() {
     });
   }
 
+  //to update time: use this function, interval is in seconds, 60000= 1 min
+  //function updateTime()
+  //updateTime();
+  //setInterval(function(){
+  //updateTime();
+  //},60000);
+
   hourUpdater();
-  var interval = setInterval(hourUpdater, 15000);
+  var interval = setInterval(hourUpdater, 60000);
 
   // recall local storage items, time and value, need to stay up after refresh
   //localStorage.removeItem('favoriteflavor');
   //var taste = val.localStorage.getItem('favoriteflavor');
   //"#id" to call description  "id" to get item
+  //12PM does not work
+  //change ids to hour
 
-  $("#9AM .description").val(localStorage.getItem ("9AM"));
-  $("#10AM .description").val(localStorage.getItem ("10AM"));
-  $("#11AM .description").val(localStorage.getItem ("11AM"));
-  $("#12PM .description").val(localStorage.getItem ("12PM"));
-  $("#1PM .description").val(localStorage.getItem ("1PM"));
-  $("#2PM .description").val(localStorage.getItem ("2PM"));
-  $("#3PM .description").val(localStorage.getItem ("3PM"));
-  $("#4PM .description").val(localStorage.getItem ("4PM"));
-  $("#5PM .description").val(localStorage.getItem ("5PM"));
-   
   
+    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+    $("#hour-10 .description").val(localStorage.getItem("hour-10"));
+    $("#hour-11 .description").val(localStorage.getItem("hour-11"));
+    $("#hour-12 .description").val(localStorage.getItem("hour-12"));
+    $("#hour-13 .description").val(localStorage.getItem("hour-13"));
+    $("#14hr .description").val(localStorage.getItem("14hr"));
+    $("#hour-15 .description").val(localStorage.getItem("hour-15"));
+    $("#hour-16 .description").val(localStorage.getItem("hour-16"));
+    $("#hour-17 .description").val(localStorage.getItem("hour-17"));
 
 })
 
